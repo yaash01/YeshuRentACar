@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="YeshuRentACar - Premium chauffeur-driven car rentals across South India. Book luxury sedans, SUVs, and tempo travellers with professional drivers.">
+    <meta name="keywords" content="luxury car rental, chauffeur service, airport transfer, wedding cars, corporate travel, Bengaluru">
+    <meta property="og:title" content="YeshuRentACar - Premium Chauffeur Service">
+    <meta property="og:description" content="Book premium chauffeur-driven cars across South India">
+    <title>YeshuRentACar - Premium Chauffeur-Driven Car Rentals</title>
+    <!-- Change this line if it exists -->
+<link rel="stylesheet" href="styles.css">
+
+<!-- Make sure it's exactly as shown above -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Luxury Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="luxury-loader"></div>
+            <p class="loading-text">YeshuRentACar</p>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/918880299990?text=Hello%20I%20am%20interested%20in%20premium%20chauffeur%20services" target="_blank" title="Chat on WhatsApp">
+            💬
+        </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">✦</span>
+                <span class="brand-text">YeshuRentACar</span>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#why-choose" class="nav-link">Why Us</a></li>
+                <li><a href="#fleet" class="nav-link">Fleet</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#booking" class="nav-link">Book</a></li>
+                <li><a href="#contact" class="nav-link contact-btn">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Premium Chauffeur-Driven Car Rentals</h1>
+            <p class="hero-subtitle">Experience unparalleled luxury and professionalism. Book sedans, SUVs, and limousines with expert drivers across Karnataka and South India.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('booking')">Book Now</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('booking')">Get Quote</button>
+                <a href="tel:+918880299990" class="btn btn-outline">📞 Call</a>
+                <a href="https://wa.me/918880299990" target="_blank" class="btn btn-outline">💬 WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics">
+        <div class="container">
+            <div class="stat-card">
+                <h3 class="stat-number" data-target="5000">5000</h3>
+                <p class="stat-label">Happy Clients</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="stat-number" data-target="150">150</h3>
+                <p class="stat-label">Premium Vehicles</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="stat-number" data-target="100">100</h3>
+                <p class="stat-label">Expert Drivers</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="stat-number" data-target="20">20</h3>
+                <p class="stat-label">Years Experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-choose" class="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Choose YeshuRentACar</h2>
+            <p class="section-subtitle">Exceptional service that exceeds expectations</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">👑</div>
+                    <h3>Premium Fleet</h3>
+                    <p>Meticulously maintained luxury vehicles from leading manufacturers</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Professional Drivers</h3>
+                    <p>Vetted, courteous chauffeurs with extensive training and experience</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⏰</div>
+                    <h3>On-Time Service</h3>
+                    <p>24/7 availability with GPS tracking and real-time updates</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Safety Assured</h3>
+                    <p>Comprehensive insurance and rigorous safety protocols</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💳</div>
+                    <h3>Flexible Payments</h3>
+                    <p>Multiple payment options including UPI, cards, and net banking</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌟</div>
+                    <h3>Exceptional Support</h3>
+                    <p>Dedicated customer service available round the clock</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section id="fleet" class="fleet">
+        <div class="container">
+            <h2 class="section-title">Our Premium Fleet</h2>
+            <p class="section-subtitle">Handpicked vehicles for ultimate comfort</p>
+
+            <div class="fleet-grid">
+                <!-- 4 Seater -->
+                <div class="fleet-card">
+                    <div class="fleet-image">
+                        <img src="4seater.jpeg" alt="Luxury Sedan" loading="lazy">
+                        <span class="badge">Popular</span>
+                    </div>
+                    <div class="fleet-content">
+                        <h3>Luxury Sedan</h3>
+                        <p class="vehicle-description">Elegant and sophisticated for business travel</p>
+                        <ul class="vehicle-specs">
+                            <li>👥 4-5 Passengers</li>
+                            <li>❄️ Premium AC</li>
+                            <li>🎧 Sound System</li>
+                            <li>✓ Driver Included</li>
+                        </ul>
+                        <div class="fleet-footer">
+                            <button class="btn-small" onclick="selectVehicle('Luxury Sedan')">Select</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6 Seater -->
+                <div class="fleet-card">
+                    <div class="fleet-image">
+                        <img src="6 seater.webp" alt="Premium SUV" loading="lazy">
+                        <span class="badge">Premium</span>
+                    </div>
+                    <div class="fleet-content">
+                        <h3>Premium SUV</h3>
+                        <p class="vehicle-description">Spacious comfort with commanding presence</p>
+                        <ul class="vehicle-specs">
+                            <li>👥 6-7 Passengers</li>
+                            <li>❄️ Dual AC</li>
+                            <li>🎵 Premium Audio</li>
+                            <li>✓ Driver Included</li>
+                        </ul>
+                        <div class="fleet-footer">
+                            <button class="btn-small" onclick="selectVehicle('Premium SUV')">Select</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6+1 Seater -->
+                <div class="fleet-card">
+                    <div class="fleet-image">
+                       <img src="6+1 seater.avif" alt="Luxury Limousine" loading="lazy">
+                        <span class="badge elite">Elite</span>
+                    </div>
+                    <div class="fleet-content">
+                        <h3>Luxury Limousine</h3>
+                        <p class="vehicle-description">Ultimate luxury and prestige combined</p>
+                        <ul class="vehicle-specs">
+                            <li>👥 6-7 Passengers</li>
+                            <li>❄️ Climate Control</li>
+                            <li>🎭 Entertainment System</li>
+                            <li>✓ Driver Included</li>
+                        </ul>
+                        <div class="fleet-footer">
+                            <button class="btn-small" onclick="selectVehicle('Luxury Limousine')">Select</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tempo Traveller -->
+                <div class="fleet-card">
+                    <div class="fleet-image">
+                       <img src="tempotraveller.webp" alt="Tempo Traveller" loading="lazy">
+                        <span class="badge">Group</span>
+                    </div>
+                    <div class="fleet-content">
+                        <h3>Tempo Traveller</h3>
+                        <p class="vehicle-description">Perfect for group tours and family vacations</p>
+                        <ul class="vehicle-specs">
+                            <li>👥 12-17 Passengers</li>
+                            <li>❄️ Full AC</li>
+                            <li>📺 LCD Screen</li>
+                            <li>✓ Driver Included</li>
+                        </ul>
+                        <div class="fleet-footer">
+                            <button class="btn-small" onclick="selectVehicle('Tempo Traveller')">Select</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Luxury Coach -->
+                <div class="fleet-card">
+                    <div class="fleet-image">
+                        <img src="Luxury coach.png" alt="Luxury Coach" loading="lazy">
+                        <span class="badge">Corporate</span>
+                    </div>
+                    <div class="fleet-content">
+                        <h3>Luxury Coach</h3>
+                        <p class="vehicle-description">Corporate transport for large delegations</p>
+                        <ul class="vehicle-specs">
+                            <li>👥 35-50 Passengers</li>
+                            <li>❄️ Full AC</li>
+                            <li>📻 Sound System</li>
+                            <li>✓ Professional Driver</li>
+                        </ul>
+                        <div class="fleet-footer">
+                            <button class="btn-small" onclick="selectVehicle('Luxury Coach')">Select</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wedding Car -->
+                <div class="fleet-card">
+                    <div class="fleet-image">
+                        <img src="wedding special.png" alt="Wedding Car" loading="lazy">
+                        <span class="badge special">Special</span>
+                    </div>
+                    <div class="fleet-content">
+                        <h3>Wedding Special</h3>
+                        <p class="vehicle-description">Make your special day unforgettable</p>
+                        <ul class="vehicle-specs">
+                            <li>👥 4-5 Passengers</li>
+                            <li>✨ Decorated</li>
+                            <li>🎊 Premium Finish</li>
+                            <li>✓ Driver Included</li>
+                        </ul>
+                        <div class="fleet-footer">
+                            <button class="btn-small" onclick="selectVehicle('Wedding Special')">Select</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Premium Services</h2>
+            <p class="section-subtitle">Tailored solutions for every occasion</p>
+
+            <div class="services-grid">
+                <div class="service-box">
+                    <div class="service-icon">✈️</div>
+                    <h3>Airport Transfers</h3>
+                    <p>Seamless pickups and drop-offs with flight tracking and flexible timing</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">💍</div>
+                    <h3>Wedding Services</h3>
+                    <p>Elegant transportation for grooms, families, and wedding guests</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">💼</div>
+                    <h3>Corporate Travel</h3>
+                    <p>Professional transportation for executives and business delegations</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">🗺️</div>
+                    <h3>City Tours</h3>
+                    <p>Curated sightseeing tours with experienced tour guides</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">🏨</div>
+                    <h3>Hotel Transfers</h3>
+                    <p>Convenient transportation between hotels and destinations</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">🚀</div>
+                    <h3>Outstation Travel</h3>
+                    <p>Long-distance journeys with comfort and reliability across South India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Testimonials</h2>
+            <p class="section-subtitle">Trusted by thousands of satisfied clients</p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Exceptional service! The driver was courteous, the vehicle immaculate, and the entire experience was seamless. Highly recommended."</p>
+                    <div class="testimonial-author">
+                        <strong>Rajesh Kumar</strong>
+                        <span>Business Executive</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Made our wedding day absolutely perfect. The decorated vehicle was stunning, and the professionalism was beyond expectations."</p>
+                    <div class="testimonial-author">
+                        <strong>Priya & Arjun</strong>
+                        <span>Wedding Couple</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Used for company meetings. The punctuality, vehicle condition, and driver expertise were exceptional. We'll use them exclusively."</p>
+                    <div class="testimonial-author">
+                        <strong>Amit Patel</strong>
+                        <span>Corporate Manager</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Booked multiple times for airport transfers. Always punctual, professional, and immaculate. Best service in Bengaluru!"</p>
+                    <div class="testimonial-author">
+                        <strong>Sarah Anderson</strong>
+                        <span>Frequent Traveler</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="section-title">Reserve Your Vehicle</h2>
+            <p class="section-subtitle">Simple, secure, and quick booking process</p>
+
+            <div class="booking-wrapper">
+                <form id="bookingForm" onsubmit="handleBooking(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Pickup Location *</label>
+                            <input type="text" id="pickup" required placeholder="Enter pickup location">
+                        </div>
+                        <div class="form-group">
+                            <label>Drop Location *</label>
+                            <input type="text" id="dropoff" required placeholder="Enter drop location">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Date *</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Time *</label>
+                            <input type="time" id="time" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Vehicle Type *</label>
+                            <select id="vehicle" required>
+                                <option value="">Select Vehicle</option>
+                                <option value="Luxury Sedan">Luxury Sedan (4-Seater)</option>
+                                <option value="Premium SUV">Premium SUV (6-Seater)</option>
+                                <option value="Luxury Limousine">Luxury Limousine (6+1 Seater)</option>
+                                <option value="Tempo Traveller">Tempo Traveller (12-17 Seater)</option>
+                                <option value="Luxury Coach">Luxury Coach (35-50 Seater)</option>
+                                <option value="Wedding Special">Wedding Special</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Passengers *</label>
+                            <input type="number" id="passengers" min="1" max="50" required placeholder="Number">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Full Name *</label>
+                            <input type="text" id="name" required placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number *</label>
+                            <input type="tel" id="phone" required placeholder="+91">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Email Address *</label>
+                            <input type="email" id="email" required placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Special Requests</label>
+                            <textarea id="requests" placeholder="Any special requirements..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+    <div class="form-group full-width">
+        <label>Preferred Payment Method *</label>
+        <div class="payment-options">
+            
+            <label class="payment-option">
+                <input type="radio" name="payment" value="online">
+                <span>Pay Online (Card/Net Banking/UPI)</span>
+            </label>
+            <label class="payment-option">
+                <input type="radio" name="payment" value="pickup">
+                <span>Pay at Pickup</span>
+            </label>
+            <label class="payment-option">
+                <input type="radio" name="payment" value="dropoff">
+                <span>Pay at Drop-off</span>
+            </label>
+        </div>
+    </div>
+</div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-large">Book Now</button>
+                        <a href="https://wa.me/918880299990" target="_blank" class="btn btn-secondary btn-large">Get Quote</a>
+                    </div>
+                </form>
+
+                <div class="booking-sidebar">
+                    <div class="booking-info-card">
+                        <h3>Why Book With Us?</h3>
+                        <ul>
+                            <li>✓ Competitive Pricing</li>
+                            <li>✓ 24/7 Customer Support</li>
+                            <li>✓ Professional Drivers</li>
+                            <li>✓ GPS Tracking</li>
+                            <li>✓ Secure Booking</li>
+                            <li>✓ Flexible Cancellation</li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>Need Assistance?</h3>
+                        <p>Our team is ready to help you 24/7</p>
+                        <div class="contact-methods">
+                            <a href="tel:+918880299990" class="contact-method">
+                                <span class="icon">📞</span>
+                                <div>
+                                    <p>Call Us</p>
+                                    <strong>+91 8880299990</strong>
+                                </div>
+                            </a>
+                            <a href="https://wa.me/918880299990" target="_blank" class="contact-method">
+                                <span class="icon">💬</span>
+                                <div>
+                                    <p>WhatsApp</p>
+                                    <strong>+91 8880299990</strong>
+                                </div>
+                            </a>
+                            <a href="mailto:yeshurentacar@gmail.com" class="contact-method">
+                                <span class="icon">✉️</span>
+                                <div>
+                                    <p>Email</p>
+                                    <strong>yeshurentacar@gmail.com</strong>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Quick answers to common inquiries</p>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What documents do I need to book?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You'll need a valid ID proof and a working phone number. For corporate accounts, we may request additional documentation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Are your drivers experienced?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, all chauffeurs are vetted professionals with extensive experience, regular training, and perfect safety records.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What payment methods are accepted?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We accept UPI, credit cards, debit cards, net banking, and cash. Pricing is customized based on your requirements. Please contact us for a detailed quote.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I get a price quote?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Contact us via WhatsApp, phone, or email with your travel details (date, route, vehicle type, and number of passengers). Our team will provide you with a customized quote within 1 hour.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I cancel my booking?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, cancellations are allowed up to 24 hours before booking with no charges. For changes within 24 hours, please contact us directly.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do vehicles have insurance?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>All vehicles are comprehensively insured. You're fully protected during your journey. Additional coverage options are available upon request.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">We're always ready to assist you</p>
+
+            <div class="contact-content">
+                <div class="contact-info-grid">
+                    <div class="info-box">
+                        <div class="info-icon">📍</div>
+                        <h3>Location</h3>
+                        <p>Bengaluru, Karnataka</p>
+                        <p style="font-size: 0.9rem; color: #999;">Serving all of South India</p>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-icon">📞</div>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+918880299990">+91 8880299990</a></p>
+                        <p style="font-size: 0.9rem; color: #999;">24/7 Available</p>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-icon">💬</div>
+                        <h3>WhatsApp</h3>
+                        <p><a href="https://wa.me/918880299990" target="_blank">+91 8880299990</a></p>
+                        <p style="font-size: 0.9rem; color: #999;">Instant Response</p>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-icon">✉️</div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:yeshurentacar@gmail.com">yeshurentacar@gmail.com</a></p>
+                        <p style="font-size: 0.9rem; color: #999;">Response within 1 hour</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>YeshuRentACar</h3>
+                    <p>Premium chauffeur-driven car rental services across South India. Experience luxury, comfort, and professionalism.</p>
+                    <div class="social-links">
+    <a href="https://wa.me/918880299990">WhatsApp</a>
+    <a href="mailto:yeshurentacar@gmail.com">Email</a>
+    <a href="tel:+918880299990">Phone</a>
+</div>
+
+<a class="address-link"
+   href="https://maps.app.goo.gl/AevySuY5Ey3SDndq7"
+   target="_blank">
+    📍2nd A Cross Rd, KCA Layout,<br>
+     Srinidhi Layout, JP Nagar 7th Phase,<br>
+      Konanakunte, Bengaluru,<br>
+        Karnataka – 560062
+</a>
+</div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#why-choose">Why Us</a></li>
+                        <li><a href="#fleet">Fleet</a></li>
+                        <li><a href="#services">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Airport Transfers</a></li>
+                        <li><a href="#services">Wedding Cars</a></li>
+                        <li><a href="#services">Corporate Travel</a></li>
+                        <li><a href="#services">Outstation Travel</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Phone: <a href="tel:+918880299990">+91 8880299990</a></p>
+                    <p>Email: <a href="mailto:yeshurentacar@gmail.com">yeshurentacar@gmail.com</a></p>
+                    <p>Location: Bengaluru, Karnataka</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 YeshuRentACar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
