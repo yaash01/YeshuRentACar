@@ -66,13 +66,25 @@ if (statsSection) {
 function animateCounter(element, target) {
     let current = 0;
     const increment = target / 50;
+
     const timer = setInterval(() => {
         current += increment;
+
         if (current >= target) {
-            element.textContent = target.toLocaleString();
+            if (target === 150) {
+                // Premium Vehicles (no +)
+                element.textContent = target.toLocaleString();
+            } else {
+                // Happy Clients, Experienced Drivers, Years Experience
+                element.textContent = target.toLocaleString() + "+";
+            }
             clearInterval(timer);
         } else {
-            element.textContent = Math.floor(current).toLocaleString();
+            if (target === 150) {
+                element.textContent = Math.floor(current).toLocaleString();
+            } else {
+                element.textContent = Math.floor(current).toLocaleString() + "+";
+            }
         }
     }, 30);
 }
