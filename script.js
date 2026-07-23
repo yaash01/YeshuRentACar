@@ -146,7 +146,7 @@ function handleBooking(e) {
     }
 
     const message =
-`🚗 *New Booking Request - YeshuRentACar*
+`🚗 *New Booking Request - yashuRentACar*
 
 👤 Name: ${bookingData.name}
 📞 Phone: ${bookingData.phone}
